@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            height: 1000px;
+            width: 500px;
+        }
+
+        .first {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+        }
+
+        .second {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: fixed;
+            top: 0;
+        }
+
+        .third {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Demo positon</h1>
+    <div class="container">
+        <div class="first">
+            <p>Đây là con</p>
+        </div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+
+</body>
+
+</html>

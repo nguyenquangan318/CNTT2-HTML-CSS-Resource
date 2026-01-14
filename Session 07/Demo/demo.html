@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* div {
+        width: 100px;
+        background-color: white;
+        border: 3px solid black;
+        border-top: 5px solid blue;
+        padding: 10px;
+        box-sizing: border-box;
+    } */
+
+    p {
+        height: 50px;
+    }
+
+    b {
+        height: 50px;
+        padding: 50px;
+        display: inline-block;
+    }
+
+    .opacity-div {
+        background-color: red;
+        height: 100px;
+        opacity: 0;
+    }
+    .opacity-div:hover{
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <h1>Demo box model</h1>
+    <div>
+        Đây là khối 1
+    </div>
+
+    <h1>Demo display</h1>
+    <b>Đây là thẻ inline</b>
+    <a href="">Đây cũng là thẻ inline</a>
+    <p>Đây là thẻ block</p>
+
+    <h1>Demo opacity</h1>
+    <div class="opacity-div">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        .first {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 1000px;
+            transition: all 3s;
+        }
+
+        .first:hover {
+            background-color: green;
+            width: 100px;
+            transform: translateX(100px);
+        }
+
+        .second {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .third {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        p {
+            font-family: "Dancing Script";
+            transition: all 2s;
+        }
+
+        p:hover {
+            box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Demo transition</h1>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>

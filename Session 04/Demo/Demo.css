@@ -1,0 +1,65 @@
+/* CSS Selector (Bộ chọn CSS)*/
+/* Chọn theo element */
+h1 {
+    background-color: yellow;
+}
+
+/* Chọn tất cả */
+* {
+    font-size: large;
+}
+
+/* Chọn theo id */
+#h3-text-id {
+    color: rgb(182, 122, 44);
+}
+
+/* Chọn theo class */
+.text-aqua {
+    color: aqua;
+}
+
+/* Chọn theo attribute */
+[href="google.com"] {
+    background-color: gray;
+}
+
+/* Bộ chọn pseudo-class */
+li:hover {
+    background-color: pink;
+    font-size: 50px;
+}
+
+/* Bộ chọn kết hợp */
+.list-container ul {
+    background-color: #619af7;
+}
+
+li:active {}
+
+/* color attribute */
+.color-attr {
+    color: #619af7;
+    background-color: gray;
+}
+
+/* font attribute */
+/* .font-attr {
+    font-size: ;
+    font-family: ;
+    font-weight: ;
+} */
+
+/* text attribute */
+/* .text-attr{
+    text-align: ;
+    line-height: ;
+    letter-spacing: ;
+    color:
+} */
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
