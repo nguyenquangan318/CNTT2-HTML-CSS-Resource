@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        nav {
+            background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            align-items: center;
+            padding: 12px 0px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        input {
+            width: 27%;
+            border-radius: 15px;
+            opacity: 0.2;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            outline: none;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 20px
+        }
+
+        body {
+            background-color: #f3f6fb;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            background-color: white;
+            margin: 30px 15%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            width: 200px;
+            height: 9px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background: #e9ecef;
+            border-left: 136px solid blue;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            nav input,
+            .menu {
+                display: none;
+            }
+
+            nav {
+                justify-content: space-between;
+                padding: 12px 10px
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                margin: 30px 5%;
+            }
+
+            .progress-container {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Elearning</h1>
+        <input type="text" placeholder="Tìm kiếm khóa học"></input>
+        <div class="menu">
+            <span>Khóa học</span>
+            <span>Tiến độ</span>
+            <span>Hồ sơ</span>
+        </div>
+        <div class="menu-btn">
+            ☰
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <h2>Xin chào, Bạn tôi!</h2>
+            <p>Chúc bạn học tập hiệu quả hôm nay</p>
+        </div>
+        <div class="progress-container">
+            <p>Tiến độ tổng: 68%</p>
+            <div class="progress-bar"></div>
+        </div>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 1000px;
+            border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .first-child {
+            background-color: red;
+            width: 25%;
+            height: 100px;
+        }
+
+        .second-child {
+            background-color: yellow;
+            width: 25%;
+            height: 100px;
+        }
+
+        .third-child {
+            background-color: green;
+            width: 25%;
+            height: 100px;
+        }
+
+        .forth-child {
+            background-color: blue;
+            width: 25%;
+            height: 100px;
+        }
+
+        /* 576px 768px 992px 1200px 1400px*/
+        /* Desktop first */
+        @media screen and (max-width: 1400px) {}
+
+        @media screen and (max-width: 1200px) {
+            .first-child {
+                display: none;
+            }
+
+            .second-child {
+                width: 50%;
+            }
+
+            .third-child {
+                width: 50%;
+            }
+
+            .forth-child {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {}
+
+        @media screen and (max-width: 768px) {}
+
+        @media screen and (max-width: 576px) {}
+
+        /* Mobile first */
+        @media screen and (min-width: 576px) {}
+
+        @media screen and (min-width: 768px) {}
+
+        @media screen and (min-width: 992px) {}
+
+        @media screen and (min-width: 1200px) {}
+
+        @media screen and (min-width: 1400px) {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span class="first-child">1</span>
+        <span class="second-child">2</span>
+        <div class="third-child">3</div>
+        <div class="forth-child">4</div>
+    </div>
+</body>
+
+</html>
